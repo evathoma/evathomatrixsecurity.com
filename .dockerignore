@@ -1,0 +1,15 @@
+.env
+.env.*
+.git
+.gitignore
+node_modules
+npm-debug.log*
+*.log
+coverage
+dist
+build
+public/build
+src/generated
+public/assets/images/**/*.responsive-*.webp
+.DS_Store
+Thumbs.db

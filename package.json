@@ -1,0 +1,38 @@
+{
+  "name": "evatho-matrix-website",
+  "version": "1.0.0",
+  "description": "Website and REST API foundation for Evatho Matrix Security Tanzania",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "build:images": "node scripts/convert-images.js",
+    "build:assets": "node scripts/build-assets.js",
+    "build": "npm run build:css && npm run build:images && npm run build:assets",
+    "build:css": "node scripts/build-css.js --minify",
+    "watch:css": "node scripts/build-css.js --watch"
+  },
+  "keywords": [
+    "security",
+    "express",
+    "nodejs",
+    "postgresql"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.8.2",
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.2",
+    "helmet": "^8.3.0",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "nodemon": "^3.1.9",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^3.4.17"
+  }
+}
